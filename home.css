@@ -1,0 +1,251 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-image: url('biji.jpg');
+}
+
+.header1{
+    position: static;
+
+}
+
+.headerlogo1{
+    padding-top: 1%; 
+    position: static;
+}
+
+.headerlogo{
+    float: left;
+    padding-bottom: 5%;
+    position: static;
+}
+
+
+
+.tulisanheader{
+
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    position: static;
+}
+
+.namatoko{
+    font-size: 500%;
+    text-decoration: underline;
+    position: static;
+}
+
+.keterangan{
+    font-size: 200%;
+    position: static;
+
+}
+
+.header2{
+    background-color: aqua;
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+    background-color: aqua;
+    padding-right: 10%;
+}
+
+
+.btn{
+    padding : 14px 2px;
+}
+
+.item{
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.item>div:hover{
+    background-color: aqua;
+}
+
+.dropdown:hover .item{
+    display: block;
+    
+
+}
+
+.dropdown img{
+    height: 25px;
+    width: 25px;
+}
+
+.dropdown:hover{
+    background-color: white;
+    font-weight: bold;
+}
+
+.dropdown:hover img{
+    width: 40px;
+    height: 40px;
+
+
+}
+
+footer{
+    background-color: aqua;
+    text-align: center;
+    font-size: 150%;
+}
+
+.footer2{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.dropdown1{
+    display: inline-block;
+    position: relative;
+    background-color: aqua;
+    padding-right: 10%;
+}
+
+.dropdown1 img{
+    height: 25px;
+    width: 25px;
+    
+}
+
+/* content */
+
+body{
+    background-image: url('background.png');
+}
+
+.ttgdiskon{
+    background-color: hsla(210, 4%, 75%, 0.5);
+}
+ 
+.diskon{
+    
+    width: 900px;
+    height: 500px;
+    float: left;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+} 
+.katadiskon{
+    background-color: hsla(210, 4%, 75%, 0.5); 
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    padding-top: 10%;
+    
+}
+.katadiskon1{
+    background-color: hsla(210, 4%, 75%, 0.5); 
+    text-align: center;
+    font-size: 135%;
+    padding-top: 4%;
+}
+
+.content{
+    padding: 1%;
+}
+
+.ttglatest{
+    background-color: hsla(210, 4%, 75%, 0.5);
+}
+
+.latest{
+    float: right;    
+    width: 900px;
+    height: 500px;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.namalatest{
+    background-color: hsla(210, 4%, 75%, 0.5); 
+   text-align: center;
+   font-size: 130%;
+   font-weight: bold;
+   padding-top: 1%;
+   
+}
+
+.ketlatest{
+    background-color: hsla(210, 4%, 75%, 0.5);
+   text-align: center;
+   font-size: 120%;
+   padding-bottom: 10%;
+   padding-left: 1%;
+   padding-right: 1%;
+   
+}
+
+@media only screen and (max-width: 620px)
+/* harus pake pixel */
+{
+
+    .dropdown{
+        display: block;
+    }
+    .item{
+        position: relative;
+        /* sifat dari parent di turunin */
+    }
+
+    .item>div:hover{
+        background-color: lightgray;
+    }
+    
+    .headerlogo{
+        height:30%;
+        width: 30%;
+    }
+
+ 
+
+    .namatoko{
+        font-size: 500%;
+
+    }
+    
+    .keterangan{
+        font-size: 200%;
+
+    
+    }
+    .diskon{
+       
+        width: 90%;
+        height: 100%;
+    }
+    .latest{
+        width: 90%;
+        height: 100%;
+ 
+    }
+
+
+}

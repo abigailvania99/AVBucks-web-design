@@ -1,0 +1,230 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+header{
+  background-image: url('biji.jpg');
+}
+
+.header1{
+  position: static;
+
+}
+
+.headerlogo1{
+  padding-top: 1%; 
+  position: static;
+}
+
+.headerlogo{
+  float: left;
+  padding-bottom: 5%;
+  position: static;
+}
+
+
+
+.tulisanheader{
+
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  position: static;
+}
+
+.namatoko{
+  font-size: 500%;
+  text-decoration: underline;
+  position: static;
+}
+
+.keterangan{
+  font-size: 200%;
+  position: static;
+
+}
+
+.header2{
+  background-color: aqua;
+  text-align: center;
+  font-size: 175%;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+
+}
+
+.dropdown{
+  display: inline-block;
+  position: relative;
+  background-color: aqua;
+  padding-right: 10%;
+}
+
+
+.btn{
+  padding : 14px 2px;
+}
+
+.item{
+  position: absolute;
+  background-color: blue;
+  width: 100%;
+  display: none;
+  z-index: 1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.item>div:hover{
+  background-color: aqua;
+}
+
+.dropdown:hover .item{
+  display: block;
+  
+
+}
+
+.dropdown img{
+  height: 25px;
+  width: 25px;
+}
+
+.dropdown:hover{
+  background-color: white;
+  font-weight: bold;
+}
+
+.dropdown:hover img{
+  width: 40px;
+  height: 40px;
+
+
+}
+
+footer{
+  background-color: aqua;
+  text-align: center;
+  font-size: 150%;
+}
+
+.footer2{
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.dropdown1{
+  display: inline-block;
+  position: relative;
+  background-color: aqua;
+  padding-right: 10%;
+}
+
+.dropdown1 img{
+  height: 25px;
+  width: 25px;
+  
+}
+
+
+@media only screen and (max-width: 620px)
+/* harus pake pixel */
+{
+
+
+    .dropdown{
+        display: block;
+    }
+    .item{
+        position: relative;
+        /* sifat dari parent di turunin */
+    }
+
+    .item>div:hover{
+        background-color: lightgray;
+    }
+    
+    .headerlogo{
+        height:30%;
+        width: 30%;
+    }
+ 
+
+    .namatoko{
+        font-size: 500%;
+
+    }
+    
+    .keterangan{
+        font-size: 200%;
+
+    
+    }
+
+
+
+}
+
+/* content */
+
+body{
+    background-image: url('background.png');
+}
+
+#judul{
+    font-size: 400%;
+    text-align: center;
+    font-weight: bold;
+}
+#content
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.ket{
+    margin-right: 90px;
+    margin-left: 90px;
+    font-size: 200%;
+    font-weight: bold;
+    background-color: hsla(210, 4%, 75%, 0.5);
+    border: 2px solid black;
+
+}
+
+.gmbr{
+    height: 300px;
+    width: 300px;
+    
+}
+
+
+@media only screen and (max-width: 620px){
+    #content{
+        display: block;
+    }
+    .ket{
+        display: block;
+    
+
+    }
+    #judul{
+      font-size: 250%;
+    }
+
+    .gmbr{
+      height: 200px;
+      width: 200px;
+    }
+
+    .ket{
+      font-size: 100%;
+    }
+}
